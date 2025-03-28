@@ -1,51 +1,139 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EuroPharma</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
-        }
-        header {
-            background-color: #28a745;
-            color: white;
-            padding: 15px;
-            font-size: 24px;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        footer {
-            margin-top: 20px;
-            padding: 10px;
-            background-color: #28a745;
-            color: white;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EuroPharma - Аптека</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
+    }
+    header, footer {
+      background-color: #28a745;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+    }
+    main {
+      max-width: 1200px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+    section {
+      background: #fff;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h2 {
+      border-bottom: 2px solid #28a745;
+      padding-bottom: 10px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0;
+      border-radius: 5px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #28a745;
+      color: #fff;
+    }
+    .product-img, .branch-img {
+      max-width: 150px;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        EuroPharma - Качественные лекарства
-    </header>
-    <div class="container">
-        <h2>О нас</h2>
-        <p>Euro Pharma – это аптека, которая предлагает качественные препараты от надёжных мировых поставщиков.</p>
-        <p>Мы помогаем людям поддерживать здоровье и восстанавливать силы с помощью проверенных медикаментов.</p>
-        <p>Мы гарантируем доступные цены и профессиональную консультацию.</p>
-    </div>
-    <footer>
-        &copy; 2025 EuroPharma. Все права защищены.
-    </footer>
-</body>
-</html>
+  <header>
+    <h1>EuroPharma</h1>
+    <p>Качественные лекарства и профессиональное обслуживание</p>
+  </header>
+
+  <main>
+    <!-- О компании -->
+    <section id="about">
+      <h2>О нас</h2>
+      <p>EuroPharma – это сеть аптек, предлагающих широкий ассортимент лекарственных средств от проверенных поставщиков. Мы заботимся о здоровье наших клиентов и стремимся предоставить качественные препараты по доступным ценам.</p>
+      <img src="https://via.placeholder.com/800x400?text=Аптека+EuroPharma" alt="Фото аптеки EuroPharma">
+    </section>
+
+    <!-- Товары -->
+    <section id="products">
+      <h2>Наши товары</h2>
+      <p>В нашем ассортименте представлены препараты для лечения различных заболеваний. Ниже приведена информация о некоторых продуктах:</p>
+      <table>
+        <tr>
+          <th>Название</th>
+          <th>Характеристика</th>
+          <th>Цена</th>
+          <th>Изображение</th>
+        </tr>
+        <tr>
+          <td>Препарат A</td>
+          <td>Обезболивающее, быстрое действие</td>
+          <td>1 000 тг</td>
+          <td><img class="product-img" src="https://via.placeholder.com/150?text=Препарат+A" alt="Препарат A"></td>
+        </tr>
+        <tr>
+          <td>Препарат B</td>
+          <td>Антибактериальное средство</td>
+          <td>1 500 тг</td>
+          <td><img class="product-img" src="https://via.placeholder.com/150?text=Препарат+B" alt="Препарат B"></td>
+        </tr>
+        <tr>
+          <td>Препарат C</td>
+          <td>Витамины и минералы</td>
+          <td>800 тг</td>
+          <td><img class="product-img" src="https://via.placeholder.com/150?text=Препарат+C" alt="Препарат C"></td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Персонал -->
+    <section id="staff">
+      <h2>Наши сотрудники</h2>
+      <p>Мы гордимся профессионализмом нашего персонала. Ниже указана информация о сотрудниках одного из филиалов:</p>
+      <table>
+        <tr>
+          <th>Имя</th>
+          <th>Должность</th>
+          <th>Зарплата</th>
+        </tr>
+        <tr>
+          <td>Иван Иванов</td>
+          <td>Фармацевт</td>
+          <td>150 000 тг</td>
+        </tr>
+        <tr>
+          <td>Мария Петрова</td>
+          <td>Менеджер аптеки</td>
+          <td>180 000 тг</td>
+        </tr>
+        <tr>
+          <td>Алексей Сидоров</td>
+          <td>Администратор</td>
+          <td>120 000 тг</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- Филиал -->
+    <section id="branch">
+      <h2>Филиал и результаты</h2>
+      <p><strong>Местонахождение:</strong> г. Алматы, ул. Примерная,
