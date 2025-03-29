@@ -7,10 +7,8 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
     background-color: #f4f4f4;
     color: #333;
-    padding-top: 60px; /* Для отступа от шапки */
 }
 
 /* Заголовок и навигация */
@@ -59,54 +57,21 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Контактный раздел */
-#contacts {
-    background-color: white;
-    padding: 40px 20px;
+/* Табуляция */
+.tabs {
+    margin-top: 80px; /* Отступ от шапки */
+    padding: 20px;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
+.tab-content {
+    display: none;
 }
 
-h1 {
-    font-size: 36px;
-    font-weight: 600;
-    margin-bottom: 20px;
+.tab-content.active {
+    display: block;
 }
 
-.contact-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.contact-item {
-    width: 30%;
-    margin-bottom: 30px;
-}
-
-.contact-item h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
-.contact-item p {
-    font-size: 18px;
-    margin-bottom: 5px;
-}
-
-.contact-item a {
-    color: #004a77;
-    text-decoration: none;
-}
-
-.contact-item a:hover {
-    text-decoration: underline;
-}
-
-/* Футер */
+/* Footer */
 footer {
     background-color: #004a77;
     color: white;
