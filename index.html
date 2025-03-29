@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Europharm - Контакты</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Header section -->
     <header>
@@ -16,49 +17,46 @@
                 <a href="#">Europharm</a>
             </div>
             <ul>
-                <li><a href="#about">О компании</a></li>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="#" onclick="showTab('home')">Главная</a></li>
+                <li><a href="#" onclick="showTab('promotions')">Акции</a></li>
+                <li><a href="#" onclick="showTab('search')">Поиск лекарств</a></li>
+                <li><a href="#" onclick="showTab('contacts')">Контакты</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Contact section -->
-    <section id="contacts">
-        <div class="container">
-            <h1>Контактная информация</h1>
-            <p>Мы всегда готовы помочь вам! Свяжитесь с нами любым удобным способом:</p>
-
-            <!-- Contact details -->
-            <div class="contact-info">
-                <div class="contact-item">
-                    <h2>Наши телефоны</h2>
-                    <p><a href="tel:+77776334466">8 (777) 633 44 66</a></p>
-                    <p><a href="tel:+777773452998">8 (777) 734 52 98</a></p>
-                </div>
-
-                <div class="contact-item">
-                    <h2>Наши электронные почты</h2>
-                    <p><a href="mailto:vb507019@gmail.com">vb507019@gmail.com</a></p>
-                    <p><a href="mailto:ksklub9@gmail.com">ksklub9@gmail.com</a></p>
-                    <p><a href="mailto:efimursov@gmail.com">efimursov@gmail.com</a></p>
-                </div>
-
-                <div class="contact-item">
-                    <h2>Ответственные лица</h2>
-                    <p><strong>Лесечко Марьян</strong> - генеральный директор</p>
-                    <p><strong>Ващилова Алена</strong> - менеджер по продажам</p>
-                </div>
-            </div>
+    <!-- Tab content -->
+    <div class="tabs">
+        <div id="home" class="tab-content">
+            <h1>Добро пожаловать в Europharm</h1>
+            <p>Наши магазины предлагают широкий ассортимент лекарств и товаров для здоровья.</p>
         </div>
-    </section>
 
-    <!-- Footer section -->
+        <div id="promotions" class="tab-content" style="display: none;">
+            <h1>Акции</h1>
+            <p>Следите за актуальными предложениями и скидками в наших магазинах.</p>
+        </div>
+
+        <div id="search" class="tab-content" style="display: none;">
+            <h1>Поиск лекарств</h1>
+            <p>Найдите нужное вам лекарство с помощью поиска по базе данных.</p>
+        </div>
+
+        <div id="contacts" class="tab-content" style="display: none;">
+            <h1>Контакты</h1>
+            <p>Наши телефоны: 8 (777) 633 44 66, 8 (777) 734 52 98</p>
+            <p>Наши почты: <a href="mailto:vb507019@gmail.com">vb507019@gmail.com</a>, <a href="mailto:ksklub9@gmail.com">ksklub9@gmail.com</a>, <a href="mailto:efimursov@gmail.com">efimursov@gmail.com</a></p>
+            <p><strong>Ответственные лица:</strong> Лесечко Марьян (генеральный директор), Ващилова Алена (менеджер по продажам)</p>
+        </div>
+    </div>
+
     <footer>
         <div class="container">
             <p>&copy; 2025 Europharm. Все права защищены.</p>
         </div>
     </footer>
-</body>
-</html>
 
+    <script src="script.js"></script>
+</body>
+
+</html>
