@@ -71,6 +71,22 @@ nav ul li a:hover {
     display: block;
 }
 
+h1 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Контакты */
+a {
+    color: #004a77;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 /* Footer */
 footer {
     background-color: #004a77;
